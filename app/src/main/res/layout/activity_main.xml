@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#373737">
+
+    <LinearLayout
+        android:id="@+id/fondo"
+        android:layout_width="383dp"
+        android:layout_height="695dp"
+        android:orientation="vertical"
+        android:paddingTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lanzamiento de dados"
+            android:textAlignment="center"
+            android:textColor="@color/md_theme_light_primary"
+            android:textSize="15pt" />
+
+        <ImageView
+            android:id="@+id/resultImg"
+            android:layout_width="221dp"
+            android:layout_height="219dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/result_1" />
+
+        <TextView
+            android:id="@+id/textResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text=""
+            android:textColor="@color/md_theme_light_primary"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btnLanzar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lanzar" />
+
+        <Button
+            android:id="@+id/btnTesting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cambiar color" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
